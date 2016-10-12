@@ -4,7 +4,8 @@
 	<title></title>
 <style type="text/css">
 body {
-	background: purple;
+	background: purple
+	height:auto;
 }
 #wrapper {
           height: 970px;
@@ -82,29 +83,80 @@ div ul li {
 	margin-top: 30px;
 
 }
+#tri1 {
+     width: 0;
+     height: 0;
+     border-right:30px solid red;  
+     border-left: 20px solid transparent;
+     border-bottom: 30px solid transparent;
+     position: absolute;
+     top: -3px;
+     right: -4px;
+}
+#tri2 {
+	width: 0;
+	height: 0;
+	border-right: 20px solid transparent;
+	border-left: 30px solid red;
+	border-bottom: 30px solid transparent;
+	position: absolute;
+	top:-3px;
+	left:-4px;
+}
+#tri3 {
+	width: 0;
+	height: 0;
+	border-right:20px solid transparent;
+	border-left: 30px solid red; 
+    border-top: 30px solid transparent;
+    position: absolute;
+    bottom:-3px;
+    left: -4px;
+}
+#tri4 {
+	width: 0;
+	height: 0;
+	border-right: 30px solid red;
+	border-left: 20px solid transparent;
+	border-top: 30px solid transparent;
+	position: absolute;
+	bottom: -3px;
+	right: -4px;
+
+
+}
+#header img {
+    width: 120px;
+    height: 120px;
+    margin-left: 10px;
+}
+form {
+	margin: 50px;
+}
+textarea {
+	width: 100%
+	height: 150px;
+	padding: 12px 20px;
+	box-sizing: border-box;
+	border: 2px solid #ccc;
+	border-radius: 4px;
+	background-color: #f8f8f8;
+	font-size: 16px;
+	resize: none;
+}
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
+}
 </style>
 </head>
 <body>
 <div id="wrapper"></div>
 <div id="header">
-<img src="http://r53.cooltext.com/d.php?renderid=208295037654009&extension=png" width="125" height="125" alt="logo" title="Wealth Management"/>
-<!---End of logo--->
+<img src="http://design.ubuntu.com/wp-content/uploads/ubuntu-logo32.png"/>
+<!---End of logo-->
 <div id="link">
 <ul>
 <li>Invest</li>
@@ -121,6 +173,15 @@ div ul li {
 <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
 
 The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham</p>
+<div id="tri1"></div>
+<div id="tri2"></div>
+<div id="tri3"></div>
+<div id="tri4"></div>
+
+
+
+
+
 </div>
 <div id="right">
 <h3>Profit</h3>
@@ -130,6 +191,17 @@ The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for t
 <h3>Wealth Creation</h3>
 <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
 </div>
+
+<form>
+First name: <br>
+<input type="text" name="firstname">
+<br>
+Last name: <br>
+<input type="text" name="lastname">	
+</form>
+<form>
+	<textarea>Some text.....</textarea>
+</form>
 
 
 
